@@ -12,9 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d50dcca0-4419-449d-a487-73abcadf328f
 caps.latest.revision: 6
-author: Brendunsms.author: brendunsmanager: angrobe
+author: Brenduns
+ms.author: brenduns
+manager: angrobe
 ---
-# Deploy and manage content for System Center Configuration Manager*Applies to: System Center Configuration Manager (Current Branch)*
+# Deploy and manage content for System Center Configuration Manager
+
+*Applies to: System Center Configuration Manager (Current Branch)*
+
 After you install distribution points for System Center Configuration Manager, you can begin to deploy content to them. Typically, content transfers to distribution points across the network, but other options to get content to the distribution points exists. After content transfers to a distribution point, you can update, redistribute, remove, and validate that content on distribution points.  
 
 ##  <a name="bkmk_distribute"></a> Distribute content  
@@ -259,7 +264,7 @@ Use the following sections to prestage content.
 
      For example, type **extractcontent /P:D:\PrestagedFiles\MyPrestagedFile.pkgx /S** where `D:\PrestagedFiles\` is the PrestagedFileLocation, `MyPrestagedFile.pkgx` is the prestaged file name, and `/S` informs Configuration Manager to extract only content files that are newer than what is currently on the distribution point.  
 
-     When you extract the prestaged content file on a site server, the content files are added to the content library on the site server, and then the content availability is registered in the site server database. When you export the prestaged content file on a distribution point, the content files are added to the content library on the distribution point, the distribution point sends a status message to the parent primary site server, and then the content availability is registered in the site database.  
+     When you extract the prestaged content file on a site server, the content files are added to the content library on the site server, and then the content availability is registered in the site server database. When you extract the prestaged content file on a distribution point, the content files are added to the content library on the distribution point, the distribution point sends a status message to the parent primary site server, and then the content availability is registered in the site database.  
 
     > [!IMPORTANT]  
     >  In the following scenario, you must update content that you extracted from a prestaged content file when the content is updated to a new version:  
